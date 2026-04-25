@@ -1,0 +1,148 @@
+
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: rgb(186, 29, 29);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background: url('https://via.placeholder.com/1200x600') no-repeat center/cover;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+}
+
+.hero-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: rgb(148, 3, 3);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.hero-content button:hover {
+     
+    background: rgb(239, 115, 115);
+}
+
+.movies {
+  padding: 40px;
+  text-align: center;
+}
+
+.movie-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movies h2 {
+    margin-bottom: 30px;
+}
+
+.card {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px;
+  background: rgb(148, 3, 3);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.card button:hover { 
+
+    background: rgb(239, 115, 115);
+}
+
+
+.about {
+  padding: 40px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* Reflection */
+/*
+In this project, I learned how to use Flexbox to create responsive layouts and align elements properly. Media queries helped me adjust the design for different screen sizes, especially for mobile devices. One interesting part was seeing how easily layouts can change with just a few CSS rules. It was sometimes confusing to manage spacing and responsiveness, but overall it was a fun and practical experience.
+*/
